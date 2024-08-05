@@ -17,7 +17,7 @@ public class MatriculaEstudiantes {
             System.out.println("4. Salir");
             System.out.print("Opcion: ");
             opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -64,13 +64,12 @@ public class MatriculaEstudiantes {
         // Leer el semestre del estudiante
         System.out.print("Ingrese el semestre actual: ");
         int semestre = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea
+        scanner.nextLine(); 
 
         // Leer si el curso es en linea
         System.out.print("¿El curso es en linea? (si/no): ");
         boolean esEnLinea = scanner.nextLine().equalsIgnoreCase("si");
-
-        // Si no es en linea, pedir el número de materias perdidas y créditos perdidos
+        
         int materiasPerdidas = 0;
         int creditosPerdidos = 0;
         if (!esEnLinea) {
@@ -80,7 +79,7 @@ public class MatriculaEstudiantes {
 
             System.out.print("Ingrese el numero de creditos de materias perdidas: ");
             creditosPerdidos = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea
+            scanner.nextLine();}
         }
 
         // Leer el número de creditos del semestre actual
