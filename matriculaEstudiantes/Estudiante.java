@@ -52,8 +52,6 @@ class Estudiante {
             return precioBase + materiasPerdidas * costoMateriaPerdida + creditosSemestre * costoPorCredito;
         }
     }
-
-    // Getters y setters
     public String getNombre() {
         return nombre;
     }
