@@ -30,7 +30,7 @@ public class main {
             System.out.println("5. Salir");
             System.out.print("Seleccione una opcion: ");
             opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de linea
+            scanner.nextLine(); 
 
             switch (opcion) {
                 case 1:
@@ -64,7 +64,7 @@ public class main {
         String apellido = scanner.nextLine();
         System.out.print("Ingrese edad del cliente: ");
         int edad = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de linea
+        scanner.nextLine();
 
         String representante = null;
         if (edad < 18) {
